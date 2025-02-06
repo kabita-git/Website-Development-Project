@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="script.js" defer></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #000;
+            background-image: url("back.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #776f6f;
+            padding: 20px;
+            position: fixed;
+            left: -250px;
+            height: 100%;
+            z-index: 9999;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar nav a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .sidebar nav a:hover {
+            background: #393535;
+            color: rgb(130, 116, 116);
+        }
+
+        .sidebar.active {
+            left: 0;
+        }
+
+        .overlay-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 9998;
+        }
+
+        .overlay-bg.active {
+            display: block;
+        }
+
+        .menu-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: #776f6f;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-button" onclick="toggleSidebar()">☰</div>
+    <div class="overlay-bg" onclick="toggleSidebar()"></div>
+    <div class="sidebar">
+        <img src="lalalalal.jpg" alt="Gallery Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="album.html">Album</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2>Welcome to My Gallery</h2><br>
+        <p>Hello Everyone!</p><br>
+
+        <p>Myself Kabita Katwal,currently pursuing bachelor degree of B.Tech.Ed. in IT at Kathmandu University. In this
+            gallery, you'll find a collection of my favorite photos, university journey, showcasing various dresses and
+            culture. I hope
+            you enjoy exploring my album much as I enjoyed creating it! <br> <br>
+            Connect with me on:
+            <a href="https://www.facebook.com/kabita.katwal.311/" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>,
+            <a href="https://www.instagram.com/may_be_kabuu/" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>,
+
+            <a href="https://np.linkedin.com/in/kabita-katwal-587b82278" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kabita Katwal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

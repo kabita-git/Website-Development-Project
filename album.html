@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <style>
+        #album2 .photo-item img {
+            width: 250px;
+            height: 1000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="menu-button" onclick="toggleSidebar()">☰</div>
+    <div class="overlay-bg" onclick="toggleSidebar()"></div>
+    <div class="sidebar">
+        <img src="lalalalal.jpg" alt="Gallery Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="album.html">Album</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <header>
+        <h1>Photo Album</h1>
+    </header>
+
+    <section class="album-gallery">
+        <div class="album" onclick="showAlbum('album1')">
+            <h2>Album 1</h2>
+        </div>
+        <div class="album" onclick="showAlbum('album2')">
+            <h2>Album 2</h2>
+        </div>
+    </section>
+
+    <div id="album1" class="photo-gallery" style="display: none;">
+        <h3>B Tech Ed IT 2023</h3>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="img/Orientation2023.jpg" alt="Photo 1">
+                <p class="caption">Orientation Program Batch 2023</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/korean.jpeg" alt="Photo 2">
+                <p class="caption">Group photo with our favorite teacher </p>
+            </div>
+            <div class="photo-item">
+                <img src="img/KU visit.jpeg" alt="Photo 3">
+                <p class="caption">Visited KU-Dhulikhel for the first time</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/group works.jpg" alt="Photo 4">
+                <p class="caption">Collaboration and group work</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/Orientation2024.jpg" alt="Photo 5">
+                <p class="caption">Hosted Orientation program for 2024 Batch</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/ku-IT-meet.jpg" alt="Photo 6">
+                <p class="caption">IT-Meet 2024 at KU-Dhulikhel</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/Star-Confrence.jpg" alt="Photo 7">
+                <p class="caption">2024 Star Global Conference</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/Career Counseling.jpg" alt="Photo 8">
+                <p class="caption">Career Counseling Session</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/projectdemo.day.jpg" alt="Photo 9">
+                <p class="caption">TechEdu Nexus Internship Capstone Demo Program,</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/interaction.jpg" alt="Photo 10">
+                <p class="caption">Interaction with student of Chinju University, Korea</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="album2" class="photo-gallery" style="display: none;">
+        <h3>Classic and Cultural</h3>
+        <div class="photo-grid">
+            <div class="photo-item">
+                <img src="img/img11.jpg" alt="Photo 11">
+                <p class="caption">Wearing saree for the 1st time</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img12.jpg" alt="Photo 12">
+                <p class="caption">1st Monday of shrawan </p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img13.jpg" alt="Photo 13">
+                <p class="caption"> Sherpa's Cultural Dress </p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img14.jpg" alt="Photo 14">
+                <p class="caption">Slaying on white Kurthi</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img15.jpg" alt="Photo 15">
+                <p class="caption">Dashain 2080</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img16.jpg" alt="Photo 16">
+                <p class="caption">Rai's Cultural Dress</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img17.jpg" alt="Photo 17">
+                <p class="caption">JalBinayak Temple</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img18.jpg" alt="Photo 18">
+                <p class="caption">Teej 2081</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img 19.jpg" alt="Photo 19">
+                <p class="caption">Tihar-Bhaitika 2081</p>
+            </div>
+            <div class="photo-item">
+                <img src="img/img20.jpg" alt="Photo 20">
+                <p class="caption">Wearing beautiful Sarara </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kabita Katwal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
